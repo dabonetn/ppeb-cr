@@ -44,10 +44,10 @@ Here are some of the Features from the PPEB2.INO file.
 
 IMPLEMENTED: (Mostly in the order done).
 
-Board in the size and shape of a real TI Speech Synthesizer
-Speech Synthesizer implementation using PWM
-32KB Expanded Memory (using Pico memory if desired, but also PSRAM that can implement SAMS, see below...)
-DSR RAM/ROM Memory - 4KB ROM area + 5 * paged 4KB (20KB) RAM areas in >5000=>5FFF
+Board in the size and shape of a real TI Speech Synthesizer.
+Speech Synthesizer implementation using PWM.
+32KB Expanded Memory (using Pico memory if desired, but also PSRAM that can implement SAMS, see below...).
+DSR RAM/ROM Memory - 4KB ROM area + 5 * paged 4KB (20KB) RAM areas in >5000=>5FFF.
 GRAM/GROM Cartridge + Multi-bank RAM/ROM, E.G. 40KB GROM & 16KB+ ROM (+MiniMem-RAM) +++ PSRAM expands this considerably
 Load   Interrupt Capable (Used to enable the USB subsystem [keyboard & joystick])
 ExtInt Interrupt Capable (Used to enable RS232 non-blocking reads)
