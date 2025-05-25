@@ -12,9 +12,8 @@ This device must not be sold as a commercial product, it must not be "passed on"
 
 I know nothing about the software side of this project, I just wanted to make it easier to build.
 
-The RS232 port was not routed on this version of the board, and shares one pin with the reset button and also
-a pin with the second PSram, so only the 2mb version supports serial.
-
+The RS232 port was not routed on this version of the board, and shares one pin with the reset button 
+and also a pin with the second PSram, so only the 2mb version supports serial.
 If you would like RS232 3.3V Level out, attach to the Pi Pico W pins GP8 for Serial Transmit, and GP9 for Serial Receive.
 
 
@@ -44,41 +43,40 @@ Here are some of the Features from the PPEB2.INO file.
 
 
 IMPLEMENTED: (Mostly in the order done)
-
-.Board in the size and shape of a real TI Speech Synthesizer
-.Speech Synthesizer implementation using PWM
-.32KB Expanded Memory (using Pico memory if desired, but also PSRAM that can implement SAMS, see below...)
-.DSR RAM/ROM Memory - 4KB ROM area + 5 * paged 4KB (20KB) RAM areas in >5000=>5FFF
-.GRAM/GROM Cartridge + Multi-bank RAM/ROM, E.G. 40KB GROM & 16KB+ ROM (+MiniMem-RAM) +++ PSRAM expands this considerably
-.Load   Interrupt Capable (Used to enable the USB subsystem [keyboard & joystick])
-.ExtInt Interrupt Capable (Used to enable RS232 non-blocking reads)
-.USB Keyboard Interface "<ALT>=" is the normal TI-99 reset, but <CTRL><ALT>DEL can perform a full reset if <ALT>'=' has been locked out,
-.USB Keyboard Interface  <CTRL><ALT>F11 is a keyboard to joystick toggle (enables TAB and Arrow keys as a joystick), <CTRL><ALT>F12 is a keyboard-state reset, should keys get stuck
-.USB Joystick Interface (4 way Hat switch & 4 buttons + includes 1 analog stick converted to digital)
-.USB Mouse interface - TIPI style which can also do Mechatronics style using the available TIPI drivers
-.DSK/x - Via the SD Card, including listing directories w/o the 127 file limit
-.RAW File read and write support (these work with sectors, but are not direct sector I/O)
-.PIO - List to SD Card text-file (/spool.txt)
-.Using TCP/IP & standard time-server to set the Pico clock for proper file system timestamps
-.SAMS Memory Expansion, using a PSRAM chip, size configurable at build-time
-.RS232 - Via Pico's free Serial2 port.  Uses a fixed BAUD rate, see below in the defines, .cfg file can override
-.PI.CLOCK - WiFi on the Pico W - Special read-only file (set via a NTP time-server mentioned above) also defined as just 'CLOCK'
-.Sockets - WiFi on the Pico W - RS232/2 - port:2322 (Server socket - with single client auto-connect)
-.Sockets - WiFi on the Pico W - PI.TCP=... (a single Client-Only socket)
-.Sockets - WiFi on the Pico W - Extension-TCP (a single Client-Only socket)
-.DSK1 automap when E.G. CALL TIPI("/x/y/DSK1ea/TIEA") loads a module (TI E/A here) from a path with a "last" path component starting with "DSK1" - which gets automapped
-.Math Co-Processor implements faster Add (and Sub) Multiply and Divide for Radix-100 floating point numbers (requires USB subsystem)
-.PCode Card, with "PCode.ROM", "PCode.GRM" in the SD Card's root, must be 12KB & 62KB (or 64KB) merged G/ROM dumps
-.mydisk.DSK sector-dump disk images mapped via CALL MAP1...MAP9 accessed via a special build of the TI Disk Controller Card's DSR ROM (needed for PCode usage, but generally useful)
-.(Note 1: The TI Disk Controller Card's DSR requires sector image file names to end with ".DSK" to be properly detected otherwise SD Card directories are assumed)
-.(Note 2: Mapping a track-dump .DSK file may [or may not] work but it will be converted to a RAM DISK [read only] but can be converted to a sector dump file by the ",RR" postfix)
-.Action-Reply (VDPREGS - because recording them was important to the implementation) <CTRL><ALT>Print-Screen to save, <CTRL><ALT>Win-Menu to restore (Doesn't support SAMS or PCODE)
-.Myarc 512KB RAM [switchable] (turns off SAMS to reuse its memory and CRU base - I.E. A Foundation card @ CRU >1E00)
-.A USB Memory Stick will mount as a DSK device (DSK3 by default) for a single directory device
-.Digi-Port emulation for sound, if the speech synth is enabled
-.ForTI sound card emulation using a connected BT speaker
-.Bluetooth Gamepads (joystick 1 and 2 specified by the 6 byte BT device address)
-.Bluetooth Keyboard & Mouse (ditto^^)
+Board in the size and shape of a real TI Speech Synthesizer
+Speech Synthesizer implementation using PWM
+32KB Expanded Memory (using Pico memory if desired, but also PSRAM that can implement SAMS, see below...)
+DSR RAM/ROM Memory - 4KB ROM area + 5 * paged 4KB (20KB) RAM areas in >5000=>5FFF
+GRAM/GROM Cartridge + Multi-bank RAM/ROM, E.G. 40KB GROM & 16KB+ ROM (+MiniMem-RAM) +++ PSRAM expands this considerably
+Load   Interrupt Capable (Used to enable the USB subsystem [keyboard & joystick])
+ExtInt Interrupt Capable (Used to enable RS232 non-blocking reads)
+USB Keyboard Interface "<ALT>=" is the normal TI-99 reset, but <CTRL><ALT>DEL can perform a full reset if <ALT>'=' has been locked out,
+USB Keyboard Interface  <CTRL><ALT>F11 is a keyboard to joystick toggle (enables TAB and Arrow keys as a joystick), <CTRL><ALT>F12 is a keyboard-state reset, should keys get stuck
+USB Joystick Interface (4 way Hat switch & 4 buttons + includes 1 analog stick converted to digital)
+USB Mouse interface - TIPI style which can also do Mechatronics style using the available TIPI drivers
+DSK/x - Via the SD Card, including listing directories w/o the 127 file limit
+RAW File read and write support (these work with sectors, but are not direct sector I/O)
+PIO - List to SD Card text-file (/spool.txt)
+Using TCP/IP & standard time-server to set the Pico clock for proper file system timestamps
+SAMS Memory Expansion, using a PSRAM chip, size configurable at build-time
+RS232 - Via Pico's free Serial2 port.  Uses a fixed BAUD rate, see below in the defines, .cfg file can override
+PI.CLOCK - WiFi on the Pico W - Special read-only file (set via a NTP time-server mentioned above) also defined as just 'CLOCK'
+Sockets - WiFi on the Pico W - RS232/2 - port:2322 (Server socket - with single client auto-connect)
+Sockets - WiFi on the Pico W - PI.TCP=... (a single Client-Only socket)
+Sockets - WiFi on the Pico W - Extension-TCP (a single Client-Only socket)
+DSK1 automap when E.G. CALL TIPI("/x/y/DSK1ea/TIEA") loads a module (TI E/A here) from a path with a "last" path component starting with "DSK1" - which gets automapped
+Math Co-Processor implements faster Add (and Sub) Multiply and Divide for Radix-100 floating point numbers (requires USB subsystem)
+PCode Card, with "PCode.ROM", "PCode.GRM" in the SD Card's root, must be 12KB & 62KB (or 64KB) merged G/ROM dumps
+mydisk.DSK sector-dump disk images mapped via CALL MAP1...MAP9 accessed via a special build of the TI Disk Controller Card's DSR ROM (needed for PCode usage, but generally useful)
+(Note 1: The TI Disk Controller Card's DSR requires sector image file names to end with ".DSK" to be properly detected otherwise SD Card directories are assumed)
+(Note 2: Mapping a track-dump .DSK file may [or may not] work but it will be converted to a RAM DISK [read only] but can be converted to a sector dump file by the ",RR" postfix)
+Action-Reply (VDPREGS - because recording them was important to the implementation) <CTRL><ALT>Print-Screen to save, <CTRL><ALT>Win-Menu to restore (Doesn't support SAMS or PCODE)
+Myarc 512KB RAM [switchable] (turns off SAMS to reuse its memory and CRU base - I.E. A Foundation card @ CRU >1E00)
+A USB Memory Stick will mount as a DSK device (DSK3 by default) for a single directory device
+Digi-Port emulation for sound, if the speech synth is enabled
+ForTI sound card emulation using a connected BT speaker
+Bluetooth Gamepads (joystick 1 and 2 specified by the 6 byte BT device address)
+Bluetooth Keyboard & Mouse (ditto^^)
 
 DSR Devices Available...
 
