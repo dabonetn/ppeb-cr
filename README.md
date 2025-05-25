@@ -44,6 +44,7 @@ Here are some of the Features from the PPEB2.INO file.
 
 
 IMPLEMENTED: (Mostly in the order done)
+
 .Board in the size and shape of a real TI Speech Synthesizer
 .Speech Synthesizer implementation using PWM
 .32KB Expanded Memory (using Pico memory if desired, but also PSRAM that can implement SAMS, see below...)
