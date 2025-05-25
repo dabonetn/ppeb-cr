@@ -12,7 +12,9 @@ This device must not be sold as a commercial product, it must not be "passed on"
 
 I know nothing about the software side of this project, I just wanted to make it easier to build.
 
-The RS232 port was not routed on this version of the board, and shares one pin with the reset buttonand a pin with the second PSram, so only the 2mb version supports serial.
+The RS232 port was not routed on this version of the board, and shares one pin with the reset button and also
+a pin with the second PSram, so only the 2mb version supports serial.
+
 If you would like RS232 3.3V Level out, attach to the Pi Pico W pins GP8 for Serial Transmit, and GP9 for Serial Receive.
 
 
