@@ -16726,9 +16726,9 @@
 		(at 353.06 146.05 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "b873ec4b-a01e-40a3-a43c-ed5ad002f1ce")
 		(property "Reference" "C4"
 			(at 350.266 142.494 90)

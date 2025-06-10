@@ -1,6 +1,11 @@
 # ppeb-cr
 PPEBcr - Surface Mount version of the PPEB by JasonACT
 
+UPDATE: Jun 9, 2025
+Changed C4 to Do Not Populate, and left it out of the bom.
+Removing this capacitor improves compatibility with different MicroSD cards.
+
+
 
 This is my reversed engineered surface mount version of the Pi Pico PEB.
 This project is by JasonACT on Atari Age Forums.

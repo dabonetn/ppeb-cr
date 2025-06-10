@@ -6048,7 +6048,7 @@
 		(path "/b873ec4b-a01e-40a3-a43c-ed5ad002f1ce")
 		(sheetname "Root")
 		(sheetfile "ppeb-re.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_bom dnp)
 		(fp_line
 			(start -0.261252 -0.735)
 			(end 0.261252 -0.735)
