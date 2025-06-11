@@ -5972,16 +5972,6 @@
 	)
 	(wire
 		(pts
-			(xy 346.71 146.05) (xy 350.52 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4af587b6-228b-496e-bc59-0a956dc6c196")
-	)
-	(wire
-		(pts
 			(xy 302.26 212.09) (xy 304.8 212.09)
 		)
 		(stroke
@@ -7549,16 +7539,6 @@
 			(type default)
 		)
 		(uuid "d837f67c-e27a-42fc-bc33-027c1b3c22cb")
-	)
-	(wire
-		(pts
-			(xy 355.6 146.05) (xy 359.41 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d874f436-4491-4ab8-bd81-f74de1345431")
 	)
 	(wire
 		(pts
@@ -9839,28 +9819,6 @@
 		(uuid "6986b67d-f081-48f7-adcd-a3d339fabd27")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 291.16 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "3.3V"
-		(shape input)
-		(at 346.71 146.05 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "69a41b88-399e-4340-91d0-37a4e24ae0b1")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 340.2666 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15084,71 +15042,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 359.41 146.05 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "58ce1821-12a1-4239-8cb6-36c5ffcb055e")
-		(property "Reference" "#PWR028"
-			(at 359.41 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 362.204 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 359.41 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 359.41 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 359.41 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "87c5aedf-682f-4bde-be0b-5f5ee973c3ea")
-		)
-		(instances
-			(project "ppeb-re"
-				(path "/e6371a91-ff23-44d2-b7ef-bd6451c8eb0f"
-					(reference "#PWR028")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 358.14 189.23 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16716,82 +16609,6 @@
 			(project "TIPI-32k"
 				(path "/e6371a91-ff23-44d2-b7ef-bd6451c8eb0f"
 					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 353.06 146.05 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp yes)
-		(uuid "b873ec4b-a01e-40a3-a43c-ed5ad002f1ce")
-		(property "Reference" "C4"
-			(at 350.266 142.494 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" ".1uf"
-			(at 355.6 142.494 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 353.06 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 353.06 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 353.06 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C38141"
-			(at 353.06 146.05 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8988bb4c-b268-4920-9a18-94fda3b75813")
-		)
-		(pin "2"
-			(uuid "b043f16e-2f57-42d6-973c-1bcc34fcdad8")
-		)
-		(instances
-			(project "ppeb-re"
-				(path "/e6371a91-ff23-44d2-b7ef-bd6451c8eb0f"
-					(reference "C4")
 					(unit 1)
 				)
 			)
