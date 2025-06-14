@@ -1,14 +1,41 @@
 # ppeb-cr
 PPEBcr - Surface Mount version of the PPEB by JasonACT
 
-UPDATE: Jun 9, 2025
-Changed C4 to Do Not Populate, and left it out of the bom.
+Removed C4 from the PCB and schematic.
 Removing this capacitor improves compatibility with different MicroSD cards.
 
 
 
 This is my reversed engineered surface mount version of the Pi Pico PEB.
 This project is by JasonACT on Atari Age Forums.
+
+Notes
+
+The QI Version of the TI99 4/a isn't supported without mods. See the atariage thread, as I don't own one of these.
+
+The PPEB draws power from the TI.. Never power the PPEB with usb while plugged in to the TI.
+
+The PPEB will NOT function without a MicroSD Card with the support files in it.
+	(These can be obtained from the link below, or when JasonAct updates the firmware, he includes them in the upgraded firmware zips.)
+
+The MicroUSB port on the front is the same port logically as the full size usb on the rear, it is just extended to the rear using the jumper pads located on the underside of the pico.
+For multiple devices plugged into the PPEB, you need to use a usb hub. Not all work, and I haven't tried any of this myself.
+
+If you get one of my unbuilt boards, or had them made from the original release, remove capacitor c4. This fixes compatibility with a lot of microsd cards.
+
+The main usage support for this board is from the Atariage forum. I'm a hardware guy, and I like building things, the software, not so much.
+
+Links.
+
+Main AtariAge forum thread.
+
+https://forums.atariage.com/topic/358129-pi-picow-peripheral-expansion-box-side-port-device/
+
+My github with the board files/case stls and links to firmware and roms.
+
+https://github.com/dabonetn/ppeb-cr
+
+
 
 
 This device must not be sold as a commercial product, it must not be "passed on" with the speech synthesizer enabled (which is GPL code, only owner-builders should enable this).
