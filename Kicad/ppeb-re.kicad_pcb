@@ -13310,7 +13310,7 @@
 			(justify bottom mirror)
 		)
 	)
-	(gr_text "C1 1uf\nC2 100uf\nC3 .1uf\nC4 .1uf\nC5 .1uf\nC6 .1uf\nC7 .1uf\nC8 1uf\n"
+	(gr_text "C1 1uf\nC2 100uf\nC3 .1uf\nC5 .1uf\nC6 .1uf\nC7 .1uf\nC8 1uf\n"
 		(at 192.5 82.5 0)
 		(layer "B.SilkS")
 		(uuid "4c76855b-1de8-4f75-8970-6dabece5a08e")
