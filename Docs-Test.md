@@ -149,16 +149,18 @@ with all the smd components installed. (Except the PSRam)
 
 ## 🧰 Required Components
 
-| Quantity | Part | Notes |
-|----------|------|-------|
+| Quantity | Part | Notes | Part Number |
+|----------|------|-------|-------|
 | 1 | PPEB3-SMD v3.2a PCB | From provided KiCAD files |
-| 1 | Raspberry Pi Pico W | Main processor |
-| 2 | 8MB PSRAM (APS6404L-3SQR-SN or compatible) | 8MB or 16MB total (Up to 8MB usable on the TI)|
-| 1 | Edge Connector (TI Sideport) | 44-pin edge connector |
-| 1 | Reset Button (optional) | Standard tactile switch |
+| 1 | Raspberry Pi Pico W | Main processor | SC0918
+| 2 | 8MB PSRAM  | 8MB or 16MB total (Up to 8MB usable on the TI)| APS6404L-3SQR-SN
+| 1 | Edge Connector (TI Sideport) | 44-pin edge connector | 5530843-4
+| 1 | Rear USB Connector | | Standard USB Port | GSB12121031EU
+| 1 | Reset Button (optional) | Standard tactile switch | | TS02-66-50-BK-100-LCR-D
 
 ## 🧰 Optional
-
+| Quantity | Part | Notes |
+|----------|------|-------|
 | 1 | 3D Printed Case | STL files provided |
 
 ---
@@ -178,8 +180,8 @@ with all the smd components installed. (Except the PSRam)
 
 ### 2️⃣ **PS Ram Installtion**
 
-- PS Ram is 8 Pin Soic, so surface mount.
-- It requires u2 to be installed for standard operation, that will give you 2MB Sams memory.
+- PS Ram is 8 Pin SOP , so surface mount skills are needed.
+- It requires u2 to be installed for standard operation, and that will give you 2MB Sams memory.
 - Install u7 for 8mb Sams Ram, or leave off if you are planning to as rs232.
 
 ### 3️⃣ **Sideport Edge Connector**
@@ -216,7 +218,7 @@ with all the smd components installed. (Except the PSRam)
 ### 6️⃣ **RS232 Breakout (Optional)**
 
 - If RS232 functionality is desired:
-  - Wire `GP8 → TX` and `GP9 → RX` to external header.
+  - Wire `GP8 → TX` and `GP9 → RX` to external header along with gnd. Gnd is available on many pins of the pico.
   - Voltage is 3.3V logic-level — external level shifter required if interfacing to legacy DB9 serial hardware.
 
 ---
@@ -227,7 +229,7 @@ with all the smd components installed. (Except the PSRam)
   - `PPEBcr-CaseBottom.stl`
   - This is used for either top.
   - `PPEBcr-Button.stl`
-  - This is a very small print.. On a fast printer, either print a bunch, or find the slicer setting to set a min time per layer for good results.
+  - This is a very small print.. On a fast printer, either print a bunch, or find the slicer setting to set a minimum time per layer for good results.
   
   - Case Tops
   
