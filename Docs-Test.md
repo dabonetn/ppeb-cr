@@ -71,13 +71,14 @@ This documentation provides a **turnkey build guide**, full feature reference, w
 | **PPEB-cr PCB** | v3.x Board Design | Provided as KiCAD/Gerber files |
 | **Raspberry Pi Pico W** | Main processor | Must be Pico W version | SC0918 |
 | **PSRAM Module** | 8MB (2x 8MB chips needed for 8MB Sams, 2MB if you want to add rs232) | APS6404L-3SQR-SN |
-| **Reset Button** | Optional | Allows external reset |
+| **Reset Button** | Optional | Allows External reset |
 | **Sideport Edge Connector** | TI-99/4A sideport interface | 5530843-4 |
-| **Female USB Connector** | Single Through Hole USB 2.0 Female Connecotr | GSB12121031EU |
+| **Female USB Connector** | Single Through Hole USB 2.0 Female Connector | GSB12121031EU |
 | **MicroSD Card** | FAT32 formatted | 8GB or larger recommended |
 
 ## Optional Hardware
-
+| Component | Description | Notes |
+|-----------|-------------|-------|
 | **USB Hub (optional)** | External powered hub | For keyboard, mouse, USB storage |
 | **RS232 Wiring (optional)** | 3.3V logic level breakout | GP8 = TX, GP9 = RX |
 | **3D Printed Case** | PPEB-cr Enclosure | STL files provided |
@@ -175,7 +176,13 @@ with all the smd components installed. (Except the PSRam)
 
 ---
 
-### 2️⃣ **Sideport Edge Connector**
+### 2️⃣ **PS Ram Installtion**
+
+- PS Ram is 8 Pin Soic, so surface mount.
+- It requires u2 to be installed for standard operation, that will give you 2MB Sams memory.
+- Install u7 for 8mb Sams Ram, or leave off if you are planning to as rs232.
+
+### 3️⃣ **Sideport Edge Connector**
 
 - Bend the pins on the edge connector in, using a flat surface like a table, they should look like a /\ with just enough room for the board to squeeze between the pins. (Tight is ok)
 - Slide the board into the 44-pin sideport edge connector carefully.
@@ -184,7 +191,7 @@ with all the smd components installed. (Except the PSRam)
 
 ---
 
-### 3️⃣ **Reset Button (Optional)**
+### 4️⃣ **Reset Button (Optional)**
 
 - Mount reset button on the PCB header.
 - Cut the 2 pins close to the edge of the board flush before soldering.
@@ -192,7 +199,7 @@ with all the smd components installed. (Except the PSRam)
 
 ---
 
-### 4️⃣ **Rear USB Port (Optional)**
+### 5️⃣ **Rear USB Port (Optional)**
 
 - Install USB Connector
   - Solder the 4 usb pins and the 2 support pins.
