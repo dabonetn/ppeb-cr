@@ -152,11 +152,11 @@ with all the smd components installed. (Except the PSRam)
 | Quantity | Part | Notes | Part Number |
 |----------|------|-------|-------|
 | 1 | PPEB3-SMD v3.2a PCB | From provided KiCAD files |
-| 1 | Raspberry Pi Pico W | Main processor | SC0918
-| 2 | 8MB PSRAM  | 8MB or 16MB total (Up to 8MB usable on the TI)| APS6404L-3SQR-SN
-| 1 | Edge Connector (TI Sideport) | 44-pin edge connector | 5530843-4
-| 1 | Rear USB Connector | | Standard USB Port | GSB12121031EU
-| 1 | Reset Button (optional) | Standard tactile switch | | TS02-66-50-BK-100-LCR-D
+| 1 | Raspberry Pi Pico W | Main processor | SC0918 |
+| 2 | 8MB PSRAM  | 8MB or 16MB total (Up to 8MB usable on the TI)| APS6404L-3SQR-SN |
+| 1 | Edge Connector (TI Sideport) | 44-pin edge connector | 5530843-4 |
+| 1 | Single Through Hole USB 2.0 Female Connector | GSB12121031EU |
+| 1 | Reset Button (optional) | Standard tactile switch | | TS02-66-50-BK-100-LCR-D |
 
 ## 🧰 Optional
 | Quantity | Part | Notes |
