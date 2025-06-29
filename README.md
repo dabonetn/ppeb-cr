@@ -57,9 +57,9 @@ The main usage support for this board is from the Atariage forum. I'm a hardware
 
 Links.
 
-(Main AtariAge forum thread.)[https://forums.atariage.com/topic/358129-pi-picow-peripheral-expansion-box-side-port-device/]
+[Main AtariAge forum thread.](https://forums.atariage.com/topic/358129-pi-picow-peripheral-expansion-box-side-port-device/)
 
-(Online PPEB guide, including how to build and general usage.)[https://github.com/hexbus/ppebcr-docs]
+[Online PPEB guide, including how to build and general usage.](https://github.com/hexbus/ppebcr-docs)
 
 
 
@@ -70,10 +70,10 @@ This device must not be sold as a commercial product, it must not be "passed on"
 I know nothing about the software side of this project, I just wanted to make it easier to build.
 
 
-(Firmware I've been using currently, it isn't the latest, but works to start)[https://forums.atariage.com/topic/358129-pi-picow-peripheral-expansion-box-side-port-device/page/28/#findComment-5639111]
+[Firmware I've been using currently, it isn't the latest, but works to start](https://forums.atariage.com/topic/358129-pi-picow-peripheral-expansion-box-side-port-device/page/28/#findComment-5639111)
 
 
-(Sample pack of Rom Images with a config file for the PPEB that support the reset button firmware listed above.)[https://forums.atariage.com/topic/358129-pi-picow-peripheral-expansion-box-side-port-device/page/28/#findComment-5616188]
+[Sample pack of Rom Images with a config file for the PPEB that support the reset button firmware listed above.](https://forums.atariage.com/topic/358129-pi-picow-peripheral-expansion-box-side-port-device/page/28/#findComment-5616188)
 
 
 
