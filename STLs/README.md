@@ -16,17 +16,22 @@ PPEB Original Version
 
 ![image](images/dabone-ppebcr-case.jpg)
 
+[Click Here for Files](https://github.com/dabonetn/ppeb-cr/tree/main/STLs/dabone-ppebcr-remix)
 
 ## JasonACT ppebcr Remix <a name="jason-cr-case"></a>
 
 ![image](images/jasonact-ppebcr-remix.jpg)
 
 
+[Click Here for Files](https://github.com/dabonetn/ppeb-cr/tree/main/STLs/JasonACTs%20Case%20-%20ppebcr-remix)
+
 ## JasonACT Original PCB Case <a name="jason-case"></a>
 
 
 ![image](images/jasonact-original.jpg)
 
+
+[Click Here for Files](https://github.com/dabonetn/ppeb-cr/tree/main/STLs/JasonACTs%20Case)
 
  <br>
   <br>
