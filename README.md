@@ -53,7 +53,11 @@ Built around the Raspberry Pi Pico W, it recreates multiple expansion cards and 
 
 If you get one of my unbuilt boards, or had them made from the original release, remove capacitor c4. This fixes compatibility with a lot of microsd cards.
 
-The main usage support for this board is from the Atariage forum. I'm a hardware guy, and I like building things, the software, not so much.
+IF YOU HAVE A HARDWARE ISSUES WITH THE SMD BOARD OPEN A ISSUE HERE!
+DO NOT BUG JASONACT about my board design.
+
+
+The main usage support for this board for a software standpoint is from the Atariage forum. I'm a hardware guy, and I like building things, the software, not so much.
 
 Links.
 
