@@ -15520,7 +15520,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "ESP-PSRAM32"
+		(property "Value" "APS6404L-3SQR-SN"
 			(at 138.43 87.6299 0)
 			(effects
 				(font
@@ -15961,7 +15961,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "ESP-PSRAM32"
+		(property "Value" "APS6404L-3SQR-SN"
 			(at 138.43 119.3799 0)
 			(effects
 				(font
