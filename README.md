@@ -4,8 +4,10 @@ PPEBcr - Surface Mount version of the PPEB by JasonACT
 This is my reversed engineered surface mount version of the Pi Pico PEB.
 This project is by JasonACT on Atari Age Forums.  
 
-There are two versions of the PPEB-cr, the standard version that mounts in a Speech Syth Case (or print your own)  
-And the sidemount version, that fits snug on the side of the ti, but lacks pass through to plug anything else in.
+There are two versions of the PPEB-cr, the standard version that mounts in a Speech Syth Case (or print your own)
+
+  
+Sidemount version is lower profile and lacks passthrough, but adds a jumper to disable usb power to help with use with external powered usb hubs, and adds a place for a activity led that connects to TP5 on the underside of the pi pico.
 
 
 ## Project Overview <a name="project-overview"></a>
@@ -91,3 +93,15 @@ Kicad Files are in the KiCad Directory, and gerbers/bom/position are in the Prod
 
 STLs that I used for a case for the Prototype board are in the STL directory, and haven't been tested with the production board.
 
+
+![PPEB-CR-Cased](/Pics/PPEBCR-Case.jpg)  
+
+![PPEB-CR-PCB](/Pics/PPEB-CR-PCB.jpg)  
+
+![PPEB-Sidemount-Cased](/Pics/Sidemount-front.jpg)  
+
+![PPEB-Sidemount-Cased](/Pics/Sidemount-rear.jpg)  
+
+![PPEB-Sidemount-PCB Front](/Pics/PPEB-Sidemount-PCB-Top.jpg)  
+
+![PPEB-Sidemount-PCB Rear](/Pics/PPEB-Sidemount-PCB-Bottom.jpg)  
