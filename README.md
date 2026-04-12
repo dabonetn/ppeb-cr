@@ -2,7 +2,11 @@
 PPEBcr - Surface Mount version of the PPEB by JasonACT
 
 This is my reversed engineered surface mount version of the Pi Pico PEB.
-This project is by JasonACT on Atari Age Forums.
+This project is by JasonACT on Atari Age Forums.  
+
+There are two versions of the PPEB-cr, the standard version that mounts in a Speech Syth Case (or print your own)  
+And the sidemount version, that fits snug on the side of the ti, but lacks pass through to plug anything else in.
+
 
 ## Project Overview <a name="project-overview"></a>
 
