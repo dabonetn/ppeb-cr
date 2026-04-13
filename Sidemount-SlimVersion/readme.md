@@ -5,7 +5,7 @@
 <br>
 
 
-![PPEBcr Board Top Assembled](/pics/PPEB-Sidemount-PCB-Bottom.jpg)
+![PPEBcr Board Top Assembled](/Pics/PPEB-Sidemount-PCB-Bottom.jpg)
 
 
 <br>
